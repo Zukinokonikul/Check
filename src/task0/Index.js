@@ -23,14 +23,14 @@ function show() {
         //(1°C*9/5)+32=F
         outputTemp= TempNr*9/5+32
         outputTemp = Math.round(outputTemp * 100) / 100
-        var outputTempString = ("twoja temperatura w F będzie się równać: " + outputTemp)
+        var outputTempString = ("Twoja temperatura w F będzie się równać: " + outputTemp)
     }
 
     if(nameTemperature.value === "F"){
         //(°F - 32) ÷ 9/5
         outputTemp= (TempNr-32)/(9/5)
         outputTemp = Math.round(outputTemp * 100) / 100
-        var outputTempString = ("twoja temperatura w C będzie się równać: " + outputTemp)
+        var outputTempString = ("Twoja temperatura w C będzie się równać: " + outputTemp)
     }
 
     document.getElementById("out").innerHTML = outputTempString ;
