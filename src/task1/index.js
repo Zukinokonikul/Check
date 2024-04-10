@@ -3,13 +3,19 @@
 function NStarStringGen(size){
     var StarSequence="";
     for (let i = 0; i < size; i++){
-        StarSequence = StarSequence+"*   "
+        StarSequence += "*   "
     }
 
-    return StarSequence
+    console.log(StarSequence)
 }
 
 for (let j = 0; j < 5; j++){
-    console.log(NStarStringGen(5))
+    NStarStringGen(j)
 }
 
+for (let k = 0; k < 5; k++){
+    NStarStringGen(k)
+}
+for (let l = 0; l < 5; l++){
+    NStarStringGen(l)
+}
